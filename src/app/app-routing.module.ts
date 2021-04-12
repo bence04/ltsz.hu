@@ -19,11 +19,16 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { OrganizationComponent } from './components/pages/organization/organization.component';
+import { OrganizationDetailsComponent } from './components/pages/organization-details/organization-details.component';
+import { OurStoryComponent } from './components/pages/our-story/our-story.component';
+import { LiskaFamilyComponent } from './components/pages/liska-family/liska-family.component';
+import { OurBasicPillarsComponent } from './components/pages/our-basic-pillars/our-basic-pillars.component';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
 
 const routes: Routes = [
-    {path: '', component: HomeOneComponent},
-    {path: 'home-two', component: HomeTwoComponent},
-    {path: 'home-three', component: HomeThreeComponent},
+    {path: '', component: HomeTwoComponent},
+
     {path: 'about', component: AboutComponent},
     {path: 'attorney', component: AttorneyComponent},
     {path: 'attorney-details', component: AttorneyDetailsComponent},
@@ -41,6 +46,12 @@ const routes: Routes = [
     {path: 'terms-conditions', component: TermsConditionsComponent},
     {path: 'contact', component: ContactComponent},
     // Here add new pages component
+    {path: 'organization', component: OrganizationComponent},
+    {path: 'organization-details/:team', component: OrganizationDetailsComponent},
+    {path: 'our-story', component: OurStoryComponent},
+    {path: 'liska-family', component: LiskaFamilyComponent},
+    {path: 'our-basic-pillars', component: OurBasicPillarsComponent},
+    {path: 'projects/:project', component: ProjectsComponent},
 
     {path: '**', component: ErrorComponent} // This line will remain down from the whole pages component list
 ];

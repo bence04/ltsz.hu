@@ -25,6 +25,12 @@ import { ErrorComponent } from './components/pages/error/error.component';
 import { PrivacyPolicyComponent } from './components/pages/privacy-policy/privacy-policy.component';
 import { TermsConditionsComponent } from './components/pages/terms-conditions/terms-conditions.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { OrganizationComponent } from './components/pages/organization/organization.component';
+import { OrganizationDetailsComponent } from './components/pages/organization-details/organization-details.component';
+import { OurStoryComponent } from './components/pages/our-story/our-story.component';
+import { LiskaFamilyComponent } from './components/pages/liska-family/liska-family.component';
+import { OurBasicPillarsComponent } from './components/pages/our-basic-pillars/our-basic-pillars.component';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +56,14 @@ import { ContactComponent } from './components/pages/contact/contact.component';
     ErrorComponent,
     PrivacyPolicyComponent,
     TermsConditionsComponent,
-    ContactComponent
+    ContactComponent,
+
+    OrganizationComponent,
+    OrganizationDetailsComponent,
+    OurStoryComponent,
+    LiskaFamilyComponent,
+    OurBasicPillarsComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
